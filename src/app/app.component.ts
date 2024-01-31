@@ -1,14 +1,26 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+
+import {LayoutComponent} from "./ui/layout";
+import {CounterBtnComponent} from "./ui/counter-btn";
+import {HeaderComponent} from "./ui/header/header.component";
+import {FooterComponent} from "./ui/footer/footer.component";
+import {SideNavComponent} from "./ui/side-nav/side-nav.component";
 
 @Component({
-  selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [
+    RouterModule,
+    LayoutComponent,
+    CounterBtnComponent,
+    HeaderComponent,
+    FooterComponent,
+    SideNavComponent,
+  ],
+  selector: 'qair-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'qair2';
+  title = 'app';
 }

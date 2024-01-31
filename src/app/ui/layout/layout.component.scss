@@ -1,0 +1,38 @@
+%centered-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+:host {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    'header header'
+    'aside content'
+    'footer footer';
+
+  > * {
+    padding: 1rem;
+  }
+}
+
+header {
+  grid-area: header;
+  color: blue;
+}
+
+aside {
+  grid-area: aside;
+  color: blue;
+}
+
+main {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+}
