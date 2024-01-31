@@ -3,8 +3,8 @@ import {
   createComponentFactory,
   Spectator,
 } from '@ngneat/spectator/jest';
-import { DEFAULT_COUNTER_LIMIT } from '@qair/ui';
 import { HeaderComponent } from './header.component';
+import {DEFAULT_COUNTER_LIMIT} from "../counter-btn";
 
 describe('HeaderComponent', () => {
   let spectator: Spectator<HeaderComponent>;

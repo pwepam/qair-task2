@@ -4,7 +4,7 @@ import {
   Spectator,
 } from '@ngneat/spectator/jest';
 import { FooterComponent } from './footer.component';
-import { DEFAULT_COUNTER_LIMIT } from '@qair/ui';
+import {DEFAULT_COUNTER_LIMIT} from "../counter-btn";
 
 describe('FooterComponent', () => {
   let spectator: Spectator<FooterComponent>;

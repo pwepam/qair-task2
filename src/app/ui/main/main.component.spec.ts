@@ -3,8 +3,8 @@ import {
   createComponentFactory,
   Spectator,
 } from '@ngneat/spectator/jest';
-import { DEFAULT_COUNTER_LIMIT } from '@qair/ui';
 import { MainComponent } from './main.component';
+import {DEFAULT_COUNTER_LIMIT} from "../counter-btn";
 
 describe('MainComponent', () => {
   let spectator: Spectator<MainComponent>;
@@ -20,7 +20,7 @@ describe('MainComponent', () => {
           qaircounterprovider=""
           qaircounterwarning=""
         >
-           Both counter increases on click 
+           Both counter increases on click
           <qair-counter-btn>
             <button>
                Clicked 0 times
@@ -45,7 +45,7 @@ describe('MainComponent', () => {
           qaircounterprovider=""
           qaircounterwarning=""
         >
-           Both counter increases on click 
+           Both counter increases on click
           <qair-counter-btn>
             <button>
                Clicked 1 times
